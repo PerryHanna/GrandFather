@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="UUQl4f" name="001Synth" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn">
+  <MAINGROUP id="aJmSeS" name="001Synth">
+    <GROUP id="{4A8356AF-B1DB-5D9B-6D94-2B930166AF6C}" name="Source">
+      <GROUP id="{B03DD43C-14B6-9087-F3DC-2DDB3ADC0FE7}" name="FrontEnd">
+        <FILE id="S67eoN" name="AdsrFront.cpp" compile="1" resource="0" file="Source/FrontEnd/AdsrFront.cpp"/>
+        <FILE id="xAXfOk" name="AdsrFront.h" compile="0" resource="0" file="Source/FrontEnd/AdsrFront.h"/>
+        <FILE id="dXldX1" name="FilterFront.cpp" compile="1" resource="0" file="Source/FrontEnd/FilterFront.cpp"/>
+        <FILE id="ipqxxJ" name="FilterFront.h" compile="0" resource="0" file="Source/FrontEnd/FilterFront.h"/>
+        <FILE id="As0IXW" name="OscFront.cpp" compile="1" resource="0" file="Source/FrontEnd/OscFront.cpp"/>
+        <FILE id="Ld7kTW" name="OscFront.h" compile="0" resource="0" file="Source/FrontEnd/OscFront.h"/>
+      </GROUP>
+      <GROUP id="{76715D49-A573-E5D1-61A1-00FF005C70E3}" name="BackEnd">
+        <FILE id="qclpf7" name="AdsrBack.cpp" compile="1" resource="0" file="Source/BackEnd/AdsrBack.cpp"/>
+        <FILE id="Es9N2M" name="AdsrBack.h" compile="0" resource="0" file="Source/BackEnd/AdsrBack.h"/>
+        <FILE id="qVtgi1" name="FilterBack.cpp" compile="1" resource="0" file="Source/BackEnd/FilterBack.cpp"/>
+        <FILE id="UX3Vm1" name="FilterBack.h" compile="0" resource="0" file="Source/BackEnd/FilterBack.h"/>
+        <FILE id="XISpBD" name="OscBack.cpp" compile="1" resource="0" file="Source/BackEnd/OscBack.cpp"/>
+        <FILE id="XHvbgY" name="OscBack.h" compile="0" resource="0" file="Source/BackEnd/OscBack.h"/>
+      </GROUP>
+      <FILE id="Rb3dSk" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="X5Twps" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="c6FXQi" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="dY4cWu" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="yYoEXx" name="SynthVoice.cpp" compile="1" resource="0" file="Source/SynthVoice.cpp"/>
+      <FILE id="KkxlQx" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+      <FILE id="y0NUqs" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="classSynth"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="classSynth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../&#1056;&#1086;&#1073;&#1086;&#1095;&#1080;&#1081; &#1089;&#1090;&#1110;&#1083;/&#1052;&#1086;&#1081; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;/Study/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
